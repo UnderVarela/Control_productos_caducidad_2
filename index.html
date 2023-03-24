@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <title>Control de productos y caducidad</title>
+</head>
+<body>
+    <h1>Control de productos y caducidad</h1>
+
+    <form id="formulario">
+        <fieldset>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+            <label for="precio">Precio:</label>
+            <input type="text" id="precio" name="precio">
+            <label for="caducidad">Caducidad:</label>
+            <select name="select" id="select">
+                <option value="0">Sin fecha de caducidad</option>
+                <option value="1">1 día</option>
+                <option value="2">2 días</option>
+                <option value="3">3 días</option>
+            </select>
+            <button type="submit">Agregar</button>
+            <button type="button" id="limpiar">Limpiar</button>
+        </fieldset>
+    </form>
+
+    <dialog id="dialog">
+        <p></p>
+        <button type="button" onclick="dialog.close()">Cerrar</button>
+    </dialog>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Caducidad</th>
+                <th id="descuento">Descuento</th>
+                <th id="pvp">P.V.P</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4"><strong>TOTAL:</strong></td>
+                <td id="total"></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script src="./js/mainGPT.js"></script>
+</body>
+</html>

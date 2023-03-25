@@ -76,6 +76,7 @@ function calcular(producto, cantidad) {
   
     return { descuento: descuento, precioFinal: precioFinal };
   }
+
   // Agregar evento al submit
 const form = document.querySelector('#formulario');
 form.addEventListener('submit', (event) => {
@@ -114,7 +115,7 @@ form.addEventListener('submit', (event) => {
         pvp = parseFloat(precio).toFixed(2);
       }
 
-      const row = `<tr><td>${nombre}</td><td>${parseFloat(precio).toFixed(2)}€</td><td>${diasCaducidad}</td><td>${descuento.toFixed(2)}</td><td>${pvp}€</td></tr>`;
+      const row = `<tr><td>${nombre}</td><td>${parseFloat(precio).toFixed(2)}€</td><td>${diasCaducidad}</td><td>${descuento.toFixed(2)}€</td><td>${pvp}€</td></tr>`;
       tbody.innerHTML += row;
     }
   }

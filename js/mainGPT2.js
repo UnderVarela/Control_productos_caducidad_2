@@ -121,6 +121,9 @@ form.addEventListener('submit', (event) => {
   }
 });
 
+
+// Botón que limpia los campos del formulario.
+
 const btnLimpiar = document.querySelector('#limpiar');
 btnLimpiar.addEventListener('click', (event) => {
   event.preventDefault();
@@ -128,3 +131,4 @@ btnLimpiar.addEventListener('click', (event) => {
   document.querySelector('#precio').value = '';
   document.querySelector('select[name="select"]').selectedIndex = 0;
 });
+

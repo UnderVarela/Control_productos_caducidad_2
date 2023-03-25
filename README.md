@@ -1,4 +1,4 @@
-# Control_productos_caducidad_2
+# Control de productos con Caducidad. GPT Version.
 
 Ejercicio de productos con caducidad y descuentos por días de caducidad.
 Realizado con GPT desde cero. 
